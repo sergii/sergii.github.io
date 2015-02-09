@@ -1,10 +1,1 @@
-{
-  "meta": {
-    "username": "sergii",
-    "repositoryName": "sergii.github.io",
-    "branch": "master"
-  },
-  "theme": {
-    "name": "Casper"
-  }
-}
+{"meta":{"username":"sergii","repositoryName":"sergii.github.io","branch":"master","cname":""},"site":{"title":"Code above all","description":"Place where thoughts go live","url":"http://sergii.github.io"},"socialnetwork":{},"theme":{"name":"Casper","url":"http://sergii.github.io/themes/Casper"}}

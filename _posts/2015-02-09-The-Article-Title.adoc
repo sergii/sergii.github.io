@@ -10,16 +10,21 @@ die 'connect: '.$dbh->errstr;
 
 .Optional Ruby
 
-[source,perl]
+[source,ruby]
 5.times { puts 'Hello World' }
 
 
 This is the optional preamble (an untitled section body). Useful for
 writing simple sectionless documents consisting only of a preamble.
 
+[source,ruby]
+5.times { puts 'Hello World' }
+
 NOTE: The abstract, preface, appendix, bibliography, glossary and
 index section titles are significant ('specialsections').
 
+[source,ruby]
+5.times { puts 'Hello World' }
 
 :numbered!:
 [abstract]

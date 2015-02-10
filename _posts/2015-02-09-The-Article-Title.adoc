@@ -1,17 +1,82 @@
 The Article Title
 =================
-Author's Name <authors@email.address>
-v1.0, 2003-12
-
-.Optional Perl
-
-[source,perl]
-die 'connect: '.$dbh->errstr;
+Author's Name <sergii.ponomarov@gmail.com>
+v1.0, 2015-02-10
 
 .Optional Ruby
 
 [source,ruby]
 5.times { puts 'Hello World' }
+
+Lets create basic sinatra app
+----
+$ mkdir sinatra-logger
+$ cd sinatra-logger
+----
+
+Create file to set project ruby version and gemset
+----
+$ echo 'ruby-2.2.0@sinatra-logger' > .ruby-version # 
+----
+
+Activate project gemset
+----
+$ cd .
+# =>
+ruby-2.2.0 - #gemset created /home/s/.rvm/gems/ruby-2.2.0@sinatra-logger
+ruby-2.2.0 - #generating sinatra-logger wrappers..........
+----
+
+Create Gemfile and Gemfile.lock
+----
+$ bundle init
+----
+ 
+ 
+Add to Gemfile
+----
+source 'htttps://rubygems.com'
+
+gem 'sinatra'
+----
+
+Install gems
+----
+$ bundle install
+----
+
+Create sinatra application
+----
+$ touch app.rb
+----
+
+Add to app.rb
+----
+require 'sinatra'
+
+get '/' do
+  'Hello World!'
+end
+----
+
+Launch our app
+----
+$ ruby app.rb
+
+# =>
+----
+
+
+
+
+.Optional Title
+----
+*Listing* Block
+
+Use: code or file listings
+----
+
+
 
 
 This is the optional preamble (an untitled section body). Useful for

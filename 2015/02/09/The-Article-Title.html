@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>The Article Title</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://sergii.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="http://sergii.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://sergii.github.io/2015/02/09/The-Article-Title.html" />
+    
+    <meta property="og:site_name" content="Code above all" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="The Article Title" />
+    <meta property="og:description" content="Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..." />
+    <meta property="og:url" content="http://sergii.github.io/2015/02/09/The-Article-Title.html" />
+    <meta property="article:published_time" content="2015-02-08T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-11T12:21:32.373Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Article Title" />
+    <meta name="twitter:description" content="Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..." />
+    <meta name="twitter:url" content="http://sergii.github.io/2015/02/09/The-Article-Title.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Code above all",
+    "author": {
+        "@type": "Person",
+        "name": "Sergii Ponomarov",
+        "image": "https://avatars.githubusercontent.com/u/641426?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": ""
+    },
+    "headline": "The Article Title",
+    "url": "http://sergii.github.io/2015/02/09/The-Article-Title.html",
+    "datePublished": "2015-02-08T22:00:00.000Z",
+    "dateModified": "2015-02-11T12:21:32.373Z",
+    "description": "Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Code above all" href="http://sergii.github.io/rss" />
+</head>
+<body class="post-template">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="http://sergii.github.io">Home</a>
+        <a class="subscribe-button icon-feed" href="http://sergii.github.io/rss/">Subscribe</a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">The Article Title</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-02-09">09 February 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lets create basic sinatra app</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ mkdir sinatra-logger
+$ cd sinatra-logger</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create file to set project ruby version and gemset</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ echo 'ruby-2.2.0@sinatra-logger' &gt; .ruby-version #</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Activate project gemset</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ cd .
+# =&gt;
+ruby-2.2.0 - #gemset created /home/s/.rvm/gems/ruby-2.2.0@sinatra-logger
+ruby-2.2.0 - #generating sinatra-logger wrappers..........</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create Gemfile and Gemfile.lock</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ bundle init</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add to Gemfile</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>source 'htttps://rubygems.com'
+
+gem 'sinatra'</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install gems</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ bundle install</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create sinatra application</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ touch app.rb</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add to app.rb</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>require 'sinatra'
+
+get '/' do
+  'Hello World!'
+end</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Launch our app</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ ruby app.rb
+
+# =&gt;
+[2015-02-10 22:15:18] INFO  WEBrick 1.3.1
+[2015-02-10 22:15:18] INFO  ruby 2.2.0 (2014-12-25) [x86_64-linux]
+== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from WEBrick
+[2015-02-10 22:15:18] INFO  WEBrick::HTTPServer#start: pid=6751 port=4567</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go to <a href="http://localhost:4567" class="bare">http://localhost:4567</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://github.com/sergii/sergii.github.io/images/sinatra-logger_start.jpg" alt="sinatra logger start.jpg">
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Optional Title</div>
+<div class="content">
+<pre>*Listing* Block
+
+Use: code or file listings</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This is the optional preamble (an untitled section body). Useful for
+writing simple sectionless documents consisting only of a preamble.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">5.times { puts 'Hello World' }</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The abstract, preface, appendix, bibliography, glossary and
+index section titles are significant (<em>specialsections</em>).
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">5.times { puts 'Hello World' }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_abstract">Example Abstract</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The optional abstract (one or more paragraphs) goes here.</p>
+</div>
+<div class="paragraph">
+<p>This document is an AsciiDoc article skeleton containing briefly
+annotated element placeholders plus a couple of example index entries
+and footnotes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_first_section">1. The First Section</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Article sections start at level 1 and can be nested up to four levels
+deep.
+<span class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnote_1" title="View footnote.">1</a>]</span>
+</p>
+</div>
+<div class="paragraph">
+<p>And now for something completely different: monkeys, lions and
+tigers (Bengal and Siberian) using the alternative syntax index
+entries.
+
+
+
+Note that multi-entry terms generate separate index entries.</p>
+</div>
+<div class="paragraph">
+<p>Here are a couple of image examples: an <span class="image"><img src="/images/images/smallnew.png" alt="smallnew.png"></span>
+example inline image followed by an example block image:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/images/tiger.png" alt="Tiger image">
+</div>
+<div class="title">Figure 1. Tiger block image</div>
+</div>
+<div class="paragraph">
+<p>Followed by an example table:</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 60%;">
+<caption class="title">Table 1. An example table</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Option</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-a <em>USER GROUP</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add <em>USER</em> to <em>GROUP</em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-R <em>GROUP</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disables access to <em>GROUP</em>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="exampleblock">
+<div class="title">Example 1. An example example</div>
+<div class="content">
+<div class="paragraph">
+<p>Lorum ipum&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="X1">1.1. Sub-section with Anchor</h3>
+<div class="paragraph">
+<p>Sub-section at level 2.</p>
+</div>
+<div class="sect3">
+<h4 id="_a_nested_sub_section">1.1.1. A Nested Sub-section</h4>
+<div class="paragraph">
+<p>Sub-section at level 3.</p>
+</div>
+<div class="sect4">
+<h5 id="_yet_another_nested_sub_section">Yet another nested Sub-section</h5>
+<div class="paragraph">
+<p>Sub-section at level 4.</p>
+</div>
+<div class="paragraph">
+<p>This is the maximum sub-section depth supported by the distributed
+AsciiDoc configuration.
+<span class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnote_2" title="View footnote.">2</a>]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_second_section">2. The Second Section</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Article sections are at level 1 and can contain sub-sections nested up
+to four deep.</p>
+</div>
+<div class="paragraph">
+<p>An example link to anchor at start of the <a href="#X1">first sub-section</a>.
+</p>
+</div>
+<div class="paragraph">
+<p>An example link to a bibliography entry <a href="#taoup">[taoup]</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_appendix">Appendix A: Example Appendix</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AsciiDoc article appendices are just just article sections with
+<em>specialsection</em> titles.</p>
+</div>
+<div class="sect2">
+<h3 id="_appendix_sub_section">Appendix Sub-section</h3>
+<div class="paragraph">
+<p>Appendix sub-section at level 2.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_bibliography">Example Bibliography</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The bibliography list is a style of AsciiDoc bulleted list.</p>
+</div>
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="taoup"></a>[taoup] Eric Steven Raymond. <em>The Art of Unix
+Programming</em>. Addison-Wesley. ISBN 0-13-142901-9.</p>
+</li>
+<li>
+<p><a id="walsh-muellner"></a>[walsh-muellner] Norman Walsh &amp; Leonard Muellner.
+<em>DocBook - The Definitive Guide</em>. O&#8217;Reilly &amp; Associates. 1999.
+ISBN 1-56592-580-7.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example_glossary">Example Glossary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Glossaries are optional. Glossaries entries are an example of a style
+of AsciiDoc labeled lists.</p>
+</div>
+<div class="dlist glossary">
+<dl>
+<dt>A glossary term</dt>
+<dd>
+<p>The corresponding (indented) definition.</p>
+</dd>
+<dt>A second glossary term</dt>
+<dd>
+<p>The corresponding (indented) definition.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnote_1">
+<a href="#_footnoteref_1">1</a> An example footnote.
+</div>
+<div class="footnote" id="_footnote_2">
+<a href="#_footnoteref_2">2</a> A second example footnote.
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/641426?v=3)"><span class="hidden">Sergii Ponomarov's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Sergii Ponomarov</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Kyiv, Ukraine</span>
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=The%20Article%20Title&amp;url=http://sergii.github.io/2015/02/09/The-Article-Title.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://sergii.github.io/2015/02/09/The-Article-Title.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://sergii.github.io/2015/02/09/The-Article-Title.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'sergii_po'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+    
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="http://sergii.github.io">Code above all</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://sergii.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://sergii.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>

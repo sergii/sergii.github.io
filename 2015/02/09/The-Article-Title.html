@@ -20,14 +20,14 @@
     <meta property="og:site_name" content="Code above all" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="The Article Title" />
-    <meta property="og:description" content="Optional Perl die &#x27;connect: &#x27;.$dbh-&amp;gt;errstr; Optional Ruby 5.times { puts &#x27;Hello World&#x27; } This is the optional preamble (an untitled section body). Useful for writing simple sectionless documents consisting only of a preamble. 5.times { puts &#x27;Hello World&#x27;..." />
+    <meta property="og:description" content="Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..." />
     <meta property="og:url" content="http://sergii.github.io/2015/02/09/The-Article-Title.html" />
     <meta property="article:published_time" content="2015-02-08T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-09T21:36:39.747Z" />
+    <meta property="article:modified_time" content="2015-02-11T00:40:56.470Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="The Article Title" />
-    <meta name="twitter:description" content="Optional Perl die &#x27;connect: &#x27;.$dbh-&amp;gt;errstr; Optional Ruby 5.times { puts &#x27;Hello World&#x27; } This is the optional preamble (an untitled section body). Useful for writing simple sectionless documents consisting only of a preamble. 5.times { puts &#x27;Hello World&#x27;..." />
+    <meta name="twitter:description" content="Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..." />
     <meta name="twitter:url" content="http://sergii.github.io/2015/02/09/The-Article-Title.html" />
     
     <script type="application/ld+json">
@@ -45,8 +45,8 @@
     "headline": "The Article Title",
     "url": "http://sergii.github.io/2015/02/09/The-Article-Title.html",
     "datePublished": "2015-02-08T22:00:00.000Z",
-    "dateModified": "2015-02-09T21:36:39.747Z",
-    "description": "Optional Perl die &#x27;connect: &#x27;.$dbh-&amp;gt;errstr; Optional Ruby 5.times { puts &#x27;Hello World&#x27; } This is the optional preamble (an untitled section body). Useful for writing simple sectionless documents consisting only of a preamble. 5.times { puts &#x27;Hello World&#x27;..."
+    "dateModified": "2015-02-11T00:40:56.470Z",
+    "description": "Lets create basic sinatra app $ mkdir sinatra-logger $ cd sinatra-logger Create file to set project ruby version and gemset $ echo &#x27;ruby-2.2.0@sinatra-logger&#x27; &amp;gt; .ruby-version # Activate project gemset $ cd . # =&amp;gt; ruby-2.2.0 - #gemset created /home/s/.rvm/gems/..."
 }
     </script>
 
@@ -79,16 +79,108 @@
         <section class="post-content">
             <div id="preamble">
 <div class="sectionbody">
+<div class="paragraph">
+<p>Lets create basic sinatra app</p>
+</div>
 <div class="listingblock">
-<div class="title">Optional Perl</div>
 <div class="content">
-<pre class="highlight"><code class="language-perl" data-lang="perl">die 'connect: '.$dbh-&gt;errstr;</code></pre>
+<pre>$ mkdir sinatra-logger
+$ cd sinatra-logger</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create file to set project ruby version and gemset</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ echo 'ruby-2.2.0@sinatra-logger' &gt; .ruby-version #</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Activate project gemset</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ cd .
+# =&gt;
+ruby-2.2.0 - #gemset created /home/s/.rvm/gems/ruby-2.2.0@sinatra-logger
+ruby-2.2.0 - #generating sinatra-logger wrappers..........</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create Gemfile and Gemfile.lock</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ bundle init</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add to Gemfile</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>source 'htttps://rubygems.com'
+
+gem 'sinatra'</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Install gems</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ bundle install</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Create sinatra application</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ touch app.rb</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Add to app.rb</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>require 'sinatra'
+
+get '/' do
+  'Hello World!'
+end</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Launch our app</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ ruby app.rb
+
+# =&gt;
+[2015-02-10 22:15:18] INFO  WEBrick 1.3.1
+[2015-02-10 22:15:18] INFO  ruby 2.2.0 (2014-12-25) [x86_64-linux]
+== Sinatra/1.4.5 has taken the stage on 4567 for development with backup from WEBrick
+[2015-02-10 22:15:18] INFO  WEBrick::HTTPServer#start: pid=6751 port=4567</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Go to <a href="http://localhost:4567" class="bare">http://localhost:4567</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="http://github.com/sergii/sergii.github.io/images/sinatra-logger_log.jpg" alt="sinatra logger log.jpg">
 </div>
 </div>
 <div class="listingblock">
-<div class="title">Optional Ruby</div>
+<div class="title">Optional Title</div>
 <div class="content">
-<pre class="highlight"><code class="language-ruby" data-lang="ruby">5.times { puts 'Hello World' }</code></pre>
+<pre>*Listing* Block
+
+Use: code or file listings</pre>
 </div>
 </div>
 <div class="paragraph">

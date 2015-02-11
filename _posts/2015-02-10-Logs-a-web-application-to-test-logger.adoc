@@ -30,6 +30,9 @@ image::http://hubpress.io/img/editor.png[]
 .HubPress editor1212
 https://github.com/sergii/sergii.github.io/blob/master/images/sinatra-logger_start.jpg
 
+.sdsdsdsdsdsd
+image::sinatra-logger_start.jpg
+
 To save or publish a post, just one click is necessary. As we focus on accessibility, you just have to focus on writing.
 
 

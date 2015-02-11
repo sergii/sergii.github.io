@@ -1,4 +1,4 @@
-Sinatra logging ti
+Sinatra logging ti 
 =================
 Author's Name <sergii.ponomarov@gmail.com>
 v1.0, 2015-02-10

@@ -67,7 +67,7 @@ $ ruby app.rb
 
 Go to http://localhost:4567
 
-image::http://github.com/sergii/sergii.github.io/images/sinatra-logger_log.jpg[]
+image::http://github.com/sergii/sergii.github.io/images/sinatra-logger_start.jpg[]
 
 
 

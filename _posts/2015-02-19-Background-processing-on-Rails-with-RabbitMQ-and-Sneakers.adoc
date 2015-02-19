@@ -1,5 +1,14 @@
 = Background processing on Rails with RabbitMQ and Sneakers
 :url-rabbitmq-guides: https://www.rabbitmq.com/download.html
+:url-ubuntu-guide: https://www.rabbitmq.com/install-debian.html
 
-==== Setting up RabbitMQ
+=== Setting up RabbitMQ
 This part depends on your operating system. There are number of {url-rabbitmq-guides}[guides] on the RabbitMQ website.
+
+On {url-ubuntu-guide}[Ubuntu]:
+
+Add the following line to your _/etc/apt/sources.list:_
+
+```
+deb http://www.rabbitmq.com/debian/ testing main
+```

@@ -2,13 +2,26 @@
 :url-rabbitmq-guides: https://www.rabbitmq.com/download.html
 :url-ubuntu-guide: https://www.rabbitmq.com/install-debian.html
 
-=== Setting up RabbitMQ
-This part depends on your operating system. There are number of {url-rabbitmq-guides}[guides] on the RabbitMQ website.
-
-On {url-ubuntu-guide}[Ubuntu]:
+[bibliography]
+ Setting up RabbitMQ
+--------------------
+This part depends on your operating system. There are number of {url-rabbitmq-guides}[guides] on the RabbitMQ website. On {url-ubuntu-guide}[Ubuntu]:
 
 Add the following line to your _/etc/apt/sources.list:_
 
-```
+----
 deb http://www.rabbitmq.com/debian/ testing main
-```
+----
+
+To avoid warnings about unsigned packages, add rabbitmq repo public key to your trusted key list using apt-key(8):
+----
+wget https://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+sudo apt-key add rabbitmq-signing-key-public.asc
+----
+
+Run *apt-get update*
+
+Install packages as usual; for instance:
+----
+sudo apt-get install rabbitmq-server
+----
